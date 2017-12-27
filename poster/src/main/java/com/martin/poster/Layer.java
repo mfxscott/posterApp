@@ -7,7 +7,6 @@ import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.PaintFlagsDrawFilter;
 import android.graphics.Path;
-import android.graphics.Point;
 import android.graphics.PointF;
 import android.graphics.RectF;
 import android.view.MotionEvent;
@@ -290,10 +289,8 @@ public class Layer {
     public boolean isTouchInLayer(float x, float y) {
         return layerRectF.contains(x, y);
     }
-
     /**
      * 缩放图层
-     *
      * @param toSacle
      */
     protected void scaleLayer(float toSacle) {
